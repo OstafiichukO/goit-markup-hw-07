@@ -37,11 +37,6 @@ p {
   display: flex;
   justify-content: space-between;
 }
-.btn:hover,
-.btn:focus {
-  background-color: var(--accent-color);
-  color: var(--title-text-color);
-}
 .title {
   margin-top: 0px;
   margin-bottom: 50px;
