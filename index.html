@@ -48,8 +48,8 @@
     <main>
         <!--Hero-->
         <section class="hero overlay section">
-            <div class="">
-                <h1 class="hero-title">Эффективные решения <br> для вашего бизнеса</h1>
+            <div class="hero-main">
+                <h1 class="hero-title">Эффективные решения для вашего бизнеса</h1>
                 <button class="btn btn-primary" data-modal-open>Заказать услугу</button>    
             </div>
         </section>
@@ -153,7 +153,7 @@
                                 width="270" height="260">
                             <div class="team-details">
                                 <h3 class="team-details__name">Игорь Демьяненко</h3>
-                                <p class="position">Product Designer</p>
+                                <p class="team-details__position">Product Designer</p>
                                 <ul class="social-list list">
                                     <li class="social-item">
                                         <a href="" class="social-item__link"><svg class="social-item__icon" width="20" height="20">
@@ -189,7 +189,7 @@
                                 width="270" height="260">
                             <div class="team-details">
                                 <h3 class="team-details__name">Ольга Репина</h3>
-                                <p class="position">Frontend Developer</p>
+                                <p class="team-details__position">Frontend Developer</p>
                                 <ul class="social-list list">
                                     <li class="social-item">
                                         <a href="" class="social-item__link"><svg class="social-item__icon" width="20" height="20">
@@ -225,7 +225,7 @@
                                 height="260">
                             <div class="team-details">
                                 <h3 class="team-details__name">Николай Тарасов</h3>
-                                <p class="position">Marketing</p>
+                                <p class="team-details__position">Marketing</p>
                                 <ul class="social-list list">
                                     <li class="social-item">
                                         <a href="" class="social-item__link"><svg class="social-item__icon" width="20" height="20">
@@ -261,7 +261,7 @@
                                 height="260">
                             <div class="team-details">
                                 <h3 class="team-details__name">Михаил Ермаков</h3>
-                                <p class="position">UI Designer</p>
+                                <p class="team-details__position">UI Designer</p>
                                 <ul class="social-list list">
                                     <li class="social-item">
                                         <a href="" class="social-item__link"><svg class="social-item__icon" width="20" height="20">
@@ -411,8 +411,8 @@
     <!-- modal -->
     <div class="backdrop is-hidden" data-modal>
         <div class="modal">
-            <button type="button" class="close" data-modal-close>
-                <svg class="close-icon" width="11" height="11">
+            <button type="button" class="modal-close" data-modal-close>
+                <svg class="modal-close__icon" width="11" height="11">
                     <use href="./images/icons.svg#close"></use>
                 </svg>
             </button>
@@ -420,7 +420,7 @@
             <form>
                 <div class="form-field">
                     <ul class="form-list list">
-                        <li class="form-element">
+                        <li class="form-list__item">
                             <label for="name">Имя</label>
                             <span class="form-anchor">
                                 <input type="text" name="name" id="name" class="input" required>
@@ -429,7 +429,7 @@
                                 </svg>
                             </span>
                         </li>
-                        <li class="form-element">
+                        <li class="form-list__item">
                             <label for="tel">Телефон</label>
                             <span class="form-anchor">
                                 <input type="tel" name="number" id="tel" class="input" required>
@@ -438,7 +438,7 @@
                                 </svg>
                             </span>
                         </li>
-                        <li class="form-element">
+                        <li class="form-list__item">
                             <label for="email">Почта</label>
                             <span class="form-anchor">
                                 <input type="email" name="email" id="email" class="input" required>

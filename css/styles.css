@@ -255,8 +255,9 @@ p {
 
 /*WebStudio Hero */
 .hero {
-  padding-top: 200px;
-  padding-bottom: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   letter-spacing: 0.06em;
   text-align: center;
   background-color: var(--accent-bgc);
@@ -277,6 +278,9 @@ p {
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+}
+.hero-main {
+  max-width: 696px;
 }
 .hero-title {
   margin-top: 0px;
@@ -707,7 +711,7 @@ p {
 /* .modal-info {
   padding: 40px 40px 20px 40px;
 } */
-.close {
+.modal-close {
   position: absolute;
   width: 30px;
   height: 30px;
@@ -719,13 +723,13 @@ p {
   background-color: #ffffff;
   cursor: pointer;
 }
-.close-icon {
+.modal-close__icon {
   object-position: center;
   fill: rgba(0, 0, 0, 1);
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.close:hover .close-icon,
-.close:focus .close-icon {
+.modal-close:hover .modal-close__icon,
+.modal-close:focus .modal-close__icon {
   fill: var(--accent-color);
 }
 .modal-strong {
@@ -749,10 +753,17 @@ p {
   margin-bottom: 4px;
   cursor: pointer;
 }
+/* input:webkit-autofill,
+input:webkit-autofill:hover,
+input:webkit-autofill:focus,
+input:webkit-autofill:active {
+  transition: background-color 5000s ease-in-out 0s;
+  -webkit-box-shadow: 0 0 0px 1000px #fff inset;
+} */
 .input:focus {
   border-color: var(--accent-color);
 }
-.form-element {
+.form-list__item {
   margin-bottom: 10px;
 }
 .form-anchor {
@@ -805,7 +816,7 @@ p {
 #comment:focus {
   border-color: var(--accent-color);
 }
-.form-element:hover .form-icon {
+.form-list__item:hover .form-icon {
   fill: var(--accent-color);
 }
 #name:focus + .form-icon,
