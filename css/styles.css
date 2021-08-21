@@ -111,13 +111,16 @@ p {
   display: flex;
   margin-left: 93px;
 }
-.nav a {
+.nav__logo,
+.site-nav__link,
+.auth-nav__contacts
+ {
   display: flex;
 }
 .site-nav__item {
   position: relative;
 }
-.site-nav__item + .site-nav__item {
+.site-nav__item:not(:first-child) {
   margin-left: 40px;
 }
 .auth-nav {
