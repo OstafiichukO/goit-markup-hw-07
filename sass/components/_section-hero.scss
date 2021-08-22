@@ -5,18 +5,18 @@
   letter-spacing: 0.06em;
   text-align: center;
   background-color: var(--accent-bgc);
-}
-.hero-main {
-  max-width: 696px;
-}
-.hero-title {
-  margin-top: 0px;
-  margin-bottom: 30px;
-  font-weight: 900;
-  font-size: 44px;
-  line-height: 1.36;
-  text-transform: uppercase;
-  color: var(--title-text-color);
+  &-block {
+    max-width: 696px;
+  }
+  &-title {
+    margin-top: 0px;
+    margin-bottom: 30px;
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 1.36;
+    text-transform: uppercase;
+    color: var(--title-text-color);
+  }
 }
 .overlay {
   max-width: 1600px;

@@ -16,6 +16,15 @@ p {
   padding: 0;
   margin: 0;
 }
+.features-list,
+.work-list,
+.team-list,
+.client-list,
+.social-list,
+.fSocials-list {
+  display: flex;
+  justify-content: space-between;
+}
 .visually-hidden {
   position: absolute;
   width: 1px;
@@ -28,15 +37,6 @@ p {
   clip: rect(0 0 0 0);
   overflow: hidden;
 }
-.features-list,
-.work-list,
-.team-list,
-.client-list,
-.social-list,
-.footer-socials__list {
-  display: flex;
-  justify-content: space-between;
-}
 .title {
   margin-top: 0px;
   margin-bottom: 50px;
@@ -48,4 +48,8 @@ p {
   line-height: 1.17;
   text-align: center;
   letter-spacing: 0.03em;
+}
+.input:focus,
+.input:hover {
+  border-color: var(--accent-color);
 }
