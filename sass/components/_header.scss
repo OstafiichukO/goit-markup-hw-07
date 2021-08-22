@@ -6,8 +6,7 @@
   border-bottom: #ececec 1px solid;
 }
 .head {
-  display: flex;
-  align-items: center;
+  @include centeredFlex(flex, null, center);
 }
 .logo,
 .menu__link,

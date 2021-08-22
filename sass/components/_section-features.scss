@@ -3,9 +3,7 @@
     width: 270px;
   }
   &__icons {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    @include centeredFlex(flex, center, center);
     height: 120px;
     margin-bottom: 30px;
     background-color: #f5f4fa;

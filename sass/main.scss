@@ -1,4 +1,6 @@
 @import 'utils/variables';
+@import 'utils/mixin';
+@import 'utils/pleceholders';
 @import 'components/container';
 @import 'components/common';
 @import 'components/header';
@@ -12,5 +14,3 @@
 @import 'components/section-clients';
 @import 'components/footer';
 @import 'components/section-portfolio';
-@import 'utils/mixin';
-@import 'utils/pleceholders';

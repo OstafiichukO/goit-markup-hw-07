@@ -22,8 +22,7 @@ p {
 .client-list,
 .social-list,
 .fSocials-list {
-  display: flex;
-  justify-content: space-between;
+  @include centeredFlex(flex, space-between, null);
 }
 .visually-hidden {
   position: absolute;

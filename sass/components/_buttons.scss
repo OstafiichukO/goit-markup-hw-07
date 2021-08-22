@@ -64,9 +64,7 @@
     0 2px 2px 0 rgba(0, 0, 0, 0.12);
   }
   &-submit {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    @include centeredFlex(flex, center, center);
     width: 200px;
     height: 50px;
     padding: 0;
@@ -81,8 +79,7 @@
   }
 }
 .buttons-list {
-  display: flex;
-  justify-content: center;
+  @include centeredFlex(flex, center, null);
   margin-bottom: 50px;
 }
 .buttons-list__item:not(:last-child) {
